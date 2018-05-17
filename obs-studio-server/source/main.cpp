@@ -31,6 +31,7 @@
 #include "osn-transition.hpp"
 #include "osn-scene.hpp"
 #include "osn-sceneitem.hpp"
+#include "osn-properties.hpp"
 #include "nodeobs_api.h"
 #include "nodeobs_content.h"
 #include "nodeobs_service.h"
@@ -181,6 +182,7 @@ int main(int argc, char *argv[])
 	osn::SceneItem::Register(myServer);
 	osn::Fader::Register(myServer);
 	osn::VolMeter::Register(myServer);
+	osn::Properties::Register(myServer);
 	OBS_API::Register(myServer);
 	OBS_content::Register(myServer);
 	OBS_service::Register(myServer);
